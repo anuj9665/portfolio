@@ -2,6 +2,7 @@
 date: '5'
 title: 'Covid Tracker'
 cover: './demo.png'
+external: 'https://github.com/codewithsan/covid_app'
 tech:
   - Flutter
   - Dart

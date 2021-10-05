@@ -5,7 +5,7 @@ cover: './demo.png'
 tech:
   - Flutter
   - Dart
-  - VS Code
+  - UI/UX
   - Rest API
 ---
 

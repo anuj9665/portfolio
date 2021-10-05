@@ -6,7 +6,7 @@ external: 'https://play.google.com/store/apps/details?id=com.sitesurface.mini_ga
 tech:
   - Flutter
   - Dart
-  - VS Code
+  - UI/UX
   - Rest API
   - Firebase
 ---

@@ -6,7 +6,7 @@ external: 'https://play.google.com/store/apps/details?id=pwddelhi.gov'
 tech:
   - Flutter
   - Dart
-  - VS Code
+  - UI/UX
   - Rest API
 ---
 
