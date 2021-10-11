@@ -74,7 +74,7 @@ const Hero = () => {
         crossplatform application for Android and iOS. Currently, I’m focused on building
         accessible, human-centered products at{' '}
         <a href="https://sitesurface.com/" target="_blank" rel="noreferrer">
-          Sitesurface
+          SiteSurface
         </a>
         .
       </p>

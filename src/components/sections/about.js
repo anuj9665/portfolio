@@ -133,12 +133,8 @@ const About = () => {
     'Express.js',
     'Node.js',
     'MongoDB',
-    'Java',
     'Firebase',
-    'Socket.io',
-    'Android Development',
     'Git',
-    'C++',
   ];
 
   return (

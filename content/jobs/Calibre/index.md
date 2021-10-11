@@ -3,7 +3,7 @@ date: '2021-06-21'
 title: 'Flutter Developer'
 company: 'Calibre Websol'
 location: 'Delhi, IN'
-range: 'June 2021 - Present'
+range: 'July 2021 - Present'
 url: 'https://www.calibrewebsol.com/'
 ---
 
