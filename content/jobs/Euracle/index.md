@@ -1,9 +1,9 @@
 ---
 date: '2020-10-15'
-title: 'Flutter Developer (Internship)'
+title: 'Flutter Developer'
 company: 'Euracle'
 location: 'Mumbai, IN'
-range: 'Feb 2021 - July 2021'
+range: 'Feb 2021 - August 2021'
 url: 'https://www.euracle.com/'
 ---
 
