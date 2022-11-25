@@ -1,5 +1,5 @@
 ---
-date: '1'
+date: '7'
 title: 'PWD Sewa'
 cover: './pwdsewa.png'
 external: 'https://play.google.com/store/apps/details?id=pwddelhi.gov'

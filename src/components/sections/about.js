@@ -151,9 +151,9 @@ const About = () => {
 
             <p>
               I am a Fullstack Flutter Developer. Currently I'm working at{' '}
-              <a href="https://www.calibrewebsol.com/">Calibre Websol</a>. I also do freelancing so
-              you can contact me if you want someone to build your projects. Currently i am looking
-              for better job opportunity in Flutter Developer role.
+              <a href="https://www.aeologic.com/">Aeologic</a>. I also do freelancing so you can
+              contact me if you want someone to build your projects. Currently i am looking for
+              better job opportunity in Flutter Developer role.
             </p>
             <p>
               {' '}

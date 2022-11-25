@@ -256,7 +256,6 @@ const StyledProject = styled.li`
     a {
       width: 100%;
       height: 100%;
-      background-color: var(--green);
       border-radius: var(--border-radius);
       vertical-align: middle;
 
@@ -283,7 +282,6 @@ const StyledProject = styled.li`
         bottom: 0;
         z-index: 3;
         transition: var(--transition);
-        background-color: var(--navy);
         mix-blend-mode: screen;
       }
     }
@@ -291,7 +289,6 @@ const StyledProject = styled.li`
     .img {
       border-radius: var(--border-radius);
       mix-blend-mode: multiply;
-      filter: grayscale(100%) contrast(1) brightness(90%);
 
       @media (max-width: 768px) {
         object-fit: cover;
@@ -307,7 +304,7 @@ const Featured = () => {
   const data = useStaticQuery(graphql`
     {
       featured: allMarkdownRemark(
-        filter: { fileAbsolutePath: { regex: "/featured/" } }
+        filter: { fileAbsolutePath: { regex: "/content/featured/" } }
         sort: { fields: [frontmatter___date], order: ASC }
       ) {
         edges {
@@ -320,6 +317,8 @@ const Featured = () => {
                 }
               }
               tech
+              playstore
+              appstore
               external
             }
             html
@@ -353,7 +352,7 @@ const Featured = () => {
         {featuredProjects &&
           featuredProjects.map(({ node }, i) => {
             const { frontmatter, html } = node;
-            const { external, title, tech, github, cover, cta } = frontmatter;
+            const { title, tech, cover, playstore, appstore, cta, external } = frontmatter;
             const image = getImage(cover);
 
             return (
@@ -363,7 +362,7 @@ const Featured = () => {
                     <p className="project-overline">Featured Project</p>
 
                     <h3 className="project-title">
-                      <a href={external}>{title}</a>
+                      <a href={playstore}>{title}</a>
                     </h3>
 
                     <div
@@ -385,14 +384,19 @@ const Featured = () => {
                           Learn More
                         </a>
                       )}
-                      {github && (
-                        <a href={github} aria-label="GitHub Link">
-                          <Icon name="GitHub" />
+                      {playstore && (
+                        <a href={playstore} aria-label="External Link" className="external">
+                          <Icon name="PlayStore" />
                         </a>
                       )}
-                      {external && !cta && (
+                      {external && (
                         <a href={external} aria-label="External Link" className="external">
                           <Icon name="External" />
+                        </a>
+                      )}
+                      {appstore && (
+                        <a href={appstore} aria-label="GitHub Link" className="external">
+                          <Icon name="AppStore" />
                         </a>
                       )}
                     </div>
@@ -400,7 +404,7 @@ const Featured = () => {
                 </div>
 
                 <div className="project-image">
-                  <a href={external ? external : github ? github : '#'}>
+                  <a href={playstore}>
                     <GatsbyImage image={image} alt={title} className="img" />
                   </a>
                 </div>
