@@ -72,11 +72,7 @@ const Hero = () => {
       <p>
         I’m a software engineer specializing in building (and occasionally designing) exceptional
         crossplatform application for Android and iOS. Currently, I’m focused on building
-        accessible, human-centered products at{' '}
-        <a href="https://sitesurface.com/" target="_blank" rel="noreferrer">
-          SiteSurface
-        </a>
-        .
+        accessible, human-centered products .
       </p>
     </>
   );

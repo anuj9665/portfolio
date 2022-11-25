@@ -158,16 +158,11 @@ const About = () => {
             <p>
               I am passionate developer with top-notch experience in Mobile app and Backend
               development. This includes full front-end design and development, backend, database
-              design, devops, etc.. Currently I'm working at{' '}
-              <a href="https://www.aeologic.com/">Aeologic</a>. I also do freelancing so you can
-              contact me if you want someone to build your projects. Currently i am looking for good
-              long term projects.
+              design, devops, etc. . I have 3+ years of experience in mobile app development.
             </p>
             <p>
-              {' '}
-              I'm also working on my side hustle <a href="https://sitesurface.com/">
-                SiteSurface.
-              </a>{' '}
+              You can contact me if you want someone to build your projects. Currently i am looking
+              for good long term projects.
             </p>
             <p>Here are a few technologies I’ve been working with recently:</p>
           </div>
