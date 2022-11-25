@@ -128,6 +128,11 @@ const About = () => {
 
   const skills = [
     'JavaScript (ES6+)',
+    'Typescript',
+    'Jest',
+    'AWS',
+    'Android',
+    'iOS',
     'Flutter',
     'Dart',
     'Express.js',
@@ -135,6 +140,7 @@ const About = () => {
     'MongoDB',
     'Firebase',
     'Git',
+    'CI/CD',
   ];
 
   return (
@@ -150,10 +156,12 @@ const About = () => {
             </p>
 
             <p>
-              I am a Fullstack Flutter Developer. Currently I'm working at{' '}
+              I am passionate developer with top-notch experience in Mobile app and Backend
+              development. This includes full front-end design and development, backend, database
+              design, devops, etc.. Currently I'm working at{' '}
               <a href="https://www.aeologic.com/">Aeologic</a>. I also do freelancing so you can
-              contact me if you want someone to build your projects. Currently i am looking for
-              better job opportunity in Flutter Developer role.
+              contact me if you want someone to build your projects. Currently i am looking for good
+              long term projects.
             </p>
             <p>
               {' '}
@@ -173,7 +181,7 @@ const About = () => {
           <div className="wrapper">
             <StaticImage
               className="img"
-              src="../../images/me.jpeg"
+              src="../../images/me.jpg"
               width={500}
               quality={95}
               formats={['AUTO', 'WEBP', 'AVIF']}

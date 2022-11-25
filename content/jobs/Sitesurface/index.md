@@ -3,7 +3,7 @@ date: '2021-07-21'
 title: 'Co-founder'
 company: 'SiteSurface'
 location: 'Delhi, IN'
-range: 'Aug 2021 - Present'
+range: 'Jun 2021 - Present'
 url: 'https://sitesurface.com/'
 ---
 
