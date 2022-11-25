@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { Fragment, useEffect, useRef } from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import styled from 'styled-components';
@@ -6,6 +6,7 @@ import sr from '@utils/sr';
 import { srConfig } from '@config';
 import { Icon } from '@components/icons';
 import { usePrefersReducedMotion } from '@hooks';
+import ReactPlayer from 'react-player';
 
 const StyledProjectsGrid = styled.ul`
   ${({ theme }) => theme.mixins.resetList};
@@ -14,7 +15,10 @@ const StyledProjectsGrid = styled.ul`
     position: relative;
     z-index: 1;
   }
+  
 `;
+
+
 
 const StyledProject = styled.li`
   position: relative;
@@ -28,14 +32,14 @@ const StyledProject = styled.li`
   }
 
   &:not(:last-of-type) {
-    margin-bottom: 100px;
+    margin-top: 100px;
 
     @media (max-width: 768px) {
-      margin-bottom: 70px;
+      margin-top: 70px;
     }
 
     @media (max-width: 480px) {
-      margin-bottom: 30px;
+      margin-top: 30px;
     }
   }
 
@@ -297,6 +301,8 @@ const StyledProject = styled.li`
         filter: grayscale(100%) contrast(1) brightness(50%);
       }
     }
+
+    
   }
 `;
 
@@ -320,6 +326,7 @@ const Featured = () => {
               playstore
               appstore
               external
+              video
             }
             html
           }
@@ -352,10 +359,11 @@ const Featured = () => {
         {featuredProjects &&
           featuredProjects.map(({ node }, i) => {
             const { frontmatter, html } = node;
-            const { title, tech, cover, playstore, appstore, cta, external } = frontmatter;
+            const { title, tech, cover, playstore, appstore, cta, external, video } = frontmatter;
             const image = getImage(cover);
 
             return (
+              <Fragment key={i}>
               <StyledProject key={i} ref={el => (revealProjects.current[i] = el)}>
                 <div className="project-content">
                   <div>
@@ -408,7 +416,21 @@ const Featured = () => {
                     <GatsbyImage image={image} alt={title} className="img" />
                   </a>
                 </div>
+               
               </StyledProject>
+              <div className="player-video">
+              {video && <ReactPlayer
+          
+              url={video}
+              playing={true}
+              loop={true}
+              muted={true}
+          
+            /> }
+              </div>
+             
+              </Fragment>
+              
             );
           })}
       </StyledProjectsGrid>

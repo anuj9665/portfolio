@@ -4,6 +4,7 @@ title: 'PWD Delhi E- Monitoring'
 cover: './demo.png'
 playstore: 'https://play.google.com/store/apps/details?id=com.calibre.pwd_monitoring_app'
 appstore: 'https://apps.apple.com/in/app/delhi-e-monitoring/id1641102179'
+video: "https://sitesurface.com/wp-content/uploads/Delhi-E-monitoring.mp4"
 tech:
   - Flutter
   - Dart

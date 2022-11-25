@@ -3,6 +3,7 @@ date: '5'
 title: 'Rolling Pay'
 cover: './demo.png'
 external: 'https://rollingpay.co/'
+video: "https://sitesurface.com/wp-content/uploads/Rolling-Pay.mp4"
 tech:
   - Flutter
   - Dart
