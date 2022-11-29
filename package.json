@@ -1,4 +1,5 @@
 {
+  "homepage": "https://anuj9665.github.io/portfolio",
   "name": "v4",
   "description": "Personal Website V4",
   "version": "1.0.0",
@@ -14,6 +15,8 @@
   "browserslist": "> 0.25%, not dead",
   "scripts": {
     "build": "gatsby build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
