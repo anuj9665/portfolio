@@ -127,17 +127,15 @@ const About = () => {
   }, []);
 
   const skills = [
+    'Flutter',
+    'iOS',
+    'Android',
+    'Dart',
     'JavaScript (ES6+)',
     'Typescript',
-    'Jest',
-    'AWS',
-    'Android',
-    'iOS',
-    'Flutter',
-    'Dart',
-    'Express.js',
-    'Node.js',
-    'MongoDB',
+    'CSS',
+    'React Js',
+    'HTML',
     'Firebase',
     'Git',
     'CI/CD',
@@ -151,14 +149,14 @@ const About = () => {
         <StyledText>
           <div>
             <p>
-              Hello! I'm Sandeep, a Software Developer based in Delhi, IN. I enjoy creating
+              Hello! I'm Anuj, a Software Developer based in Delhi, IN. I enjoy creating
               applications .
             </p>
 
             <p>
-              I am passionate developer with top-notch experience in Mobile app and Backend
-              development. This includes full front-end design and development, backend, database
-              design, devops, etc. . I have 3+ years of experience in mobile app development.
+              I am passionate developer with top-notch experience in Mobile app and Web
+              development. This includes full front-end design and development devops, etc. .
+              I have 2+ years of experience in mobile app development.
             </p>
             <p>
               You can contact me if you want someone to build your projects. Currently i am looking
@@ -176,7 +174,7 @@ const About = () => {
           <div className="wrapper">
             <StaticImage
               className="img"
-              src="../../images/me.jpg"
+              src="../../images/me.png"
               width={500}
               quality={95}
               formats={['AUTO', 'WEBP', 'AVIF']}

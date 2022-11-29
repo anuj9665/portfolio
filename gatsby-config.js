@@ -2,12 +2,12 @@ const config = require('./src/config');
 
 module.exports = {
   siteMetadata: {
-    title: 'Sandeep Kumar',
+    title: 'Anuj Yadav',
     description:
-      'Sandeep Kumar is a software engineer who specializes in building (and occasionally designing) exceptional crossplatform applications.',
+      'Anuj Yadav is a software engineer who specializes in building (and occasionally designing) exceptional crossplatform applications.',
     siteUrl: 'https://codewithsan.com', // No trailing slash allowed!
     image: '/og.png', // Path to your image you placed in the 'static' folder
-    twitterUsername: '@san07364',
+    twitterUsername: '@anuj9665',
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -20,8 +20,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'SandeepKumar',
-        short_name: 'SandeepKumar',
+        name: 'AnujYadav',
+        short_name: 'AnujYadav',
         start_url: '/',
         background_color: config.colors.darkNavy,
         theme_color: config.colors.navy,

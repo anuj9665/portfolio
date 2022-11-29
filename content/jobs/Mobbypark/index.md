@@ -1,10 +1,10 @@
 ---
 date: '2020-01-15'
 title: 'Flutter Developer'
-company: 'Euracle'
-location: 'Mumbai, IN'
-range: 'Jan 2020 - Feb 2021'
-url: 'https://www.euracle.com/'
+company: 'Mobbypark'
+location: 'Bangalore, IN'
+range: 'Jan 2021 - Jun 2021'
+url: 'https://www.mobbypark.com/'
 ---
 
 - Assists the department head in fixing bugs and building responsive UI.
